@@ -59,6 +59,11 @@ import { Component } from '@angular/core';
         <input id="email" type="email" required>
         <label for="email">Email</label>
       </div>
+      <div class="field">
+        <input id="message" type="text" required>
+        <label for="message">Message</label>
+      </div>
+      <button>SEND MESSAGE</button>
     </form>
     <footer>
       <h1>rawlin08</h1>
