@@ -6,7 +6,8 @@
     --light-gray: #D9D9D9;
     --white: #FFFFFF;
     --red: #FF705B;
-    --body-padding: 20px;
+    --body-mobile-padding: 20px;
+    --body-tablet-padding: 32px;
 }
 html {
     font-family: 'Space Grotesk', sans-serif;
@@ -46,8 +47,8 @@ a {
 app-home {
     display: block;
 }
-main, header, footer {
-    padding: var(--body-padding);
+main, header, footer, #bottom {
+    padding: var(--body-mobile-padding);
 }
 h1 {
     text-align: center;
@@ -79,6 +80,7 @@ h1 {
 }
 #greeting p {
     margin: 20px 0 24px 0;
+
 }
 #experiences {
     display: grid;
@@ -97,6 +99,7 @@ h1 {
 }
 #experiences p {
     text-align: center;
+    color: var(--light-gray);
 }
 #projects div:first-child {
     display: flex;
@@ -109,7 +112,6 @@ h1 {
 }
 #bottom {
     background-color: var(--dark-gray);
-    padding: var(--body-padding);
 }
 #contact {
     text-align: center;
@@ -118,6 +120,9 @@ h1 {
     font-size: 40px;
     font-weight: 700;
     margin: 0 0 20px 0;
+}
+#contact p {
+    color: var(--light-gray);
 }
 .field {
     position: relative;
@@ -144,7 +149,7 @@ label {
 }
 input, label {
     width: calc(100% - 4px);
-    height: 55px;
+    height: 40px;
 }
 input:focus + label,
 input:valid + label {
@@ -181,9 +186,116 @@ footer {
 }
 
 /* TABLET STYLES */
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
+    /* BOILER */
+    main, header, footer, #bottom {
+        padding: var(--body-tablet-padding);
+    }
+
+    /* HEADER */
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    h1 {
+        margin: 0;
+        font-size: 32px;
+    }
+
+    /* GREETING */
+    #aboutme {
+        display: flex;
+        flex-direction: row-reverse;
+        padding: 0 0 60px 0;
+    }
+    #greeting {
+        text-align: left;
+        padding: 0;
+    }
+    #greeting h2 {
+        font-size: 72px;
+    }
+    #greeting p {
+        margin: 60px 0 34px 0;
+    }
+    img {
+        align-self: center;
+    }
+
+    /* EXPERIENCES */
+    #experiences {
+        display: grid;
+        place-content: flex-start;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+        border-bottom: none;
+    }
+    #experiences h3 {
+        text-align: left;
+        font-size: 48px;
+    }
+    #experiences p {
+        text-align: left;
+        font-size: 18px;
+    }
+
+    /* PROJECTS */
+    #projects div:first-child h2 {
+        font-size: 72px;
+    }
+
+    /* CONTACT */
+    #contact h2 {
+        font-size: 72px;
+    }
+    #contact p {
+        font-size: 18px;
+    }
+    #form {
+        padding: 0 133px;
+    }
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 40px 0;
+    }
 }
 
 /* DESKTOP STYLES */
 @media (min-width: 1281px) {
+    header {
+        padding: 39px 165px;
+    }
+    main {
+        padding: 0 165px;
+    }
+    img {
+        width: 445px;
+        height: 618px;
+    }
+    #greeting {
+        padding: 30px 0 0 0;
+    }
+    #greeting p {
+        padding: 0 250px 0 0;
+    }
+    #experiences {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    #contact {
+        text-align: left;
+    }
+    #form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 220px;
+    }
+    #bottom {
+        padding: 0 165px;
+    }
+    footer {
+        padding: 40px 0;
+    }
 }

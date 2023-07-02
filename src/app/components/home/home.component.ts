@@ -10,12 +10,14 @@ import { Component } from '@angular/core';
       <a href="https://www.linkedin.com/in/alec-rawlins-556874170/"><svg class="icon"><use href="#linkedin"></use></svg></a>
     </div>
   </header>
-  <!-- TODO: PUT IMAGE OF ME HERE -->
   <main>
-    <div id="greeting">
-      <h2>Nice to meet you! I'm <span id="myname">Alec Rawlins</span>.</h2>
-      <p>Based in the US, I'm a front-end developer passionate about building accessible web apps and sites that users will love.</p>
-      <button>CONTACT ME</button>
+    <div id="aboutme">
+      <img src="" alt="">
+      <div id="greeting">
+        <h2>Nice to meet you! I'm <span id="myname">Alec Rawlins</span>.</h2>
+        <p>I'm a front-end developer passionate about building mobile-first, accessible web apps and sites that users will love.</p>
+        <button>CONTACT ME</button>
+      </div>
     </div>
     <div id="experiences">
       <div>
@@ -34,6 +36,10 @@ import { Component } from '@angular/core';
         <h3>Angular</h3>
         <p>Less than a Year Experience</p>
       </div>
+      <div>
+        <h3>TypeScript</h3>
+        <p>Less than a Year Experience</p>
+      </div>
     </div>
     <div id="projects">
       <div>
@@ -46,25 +52,27 @@ import { Component } from '@angular/core';
     </div>
   </main>
   <div id="bottom">
-    <div id="contact">
-      <h2>Contact</h2>
-      <p>I would love to hear about your project and how I could help. Please fill in the form, and I'll get back to you as soon as possible.</p>
+    <div id="form">
+      <div id="contact">
+        <h2>Contact</h2>
+        <p>I would love to hear about your project and how I could help. Please fill in the form, and I'll get back to you as soon as possible.</p>
+      </div>
+      <form action="">
+        <div class="field">
+          <input id="name" type="text" required>
+          <label for="name">Name</label>
+        </div>
+        <div class="field">
+          <input id="email" type="email" required>
+          <label for="email">Email</label>
+        </div>
+        <div class="field">
+          <input id="message" type="text" required>
+          <label for="message">Message</label>
+        </div>
+        <button>SEND MESSAGE</button>
+      </form>
     </div>
-    <form action="">
-      <div class="field">
-        <input id="name" type="text" required>
-        <label for="name">Name</label>
-      </div>
-      <div class="field">
-        <input id="email" type="email" required>
-        <label for="email">Email</label>
-      </div>
-      <div class="field">
-        <input id="message" type="text" required>
-        <label for="message">Message</label>
-      </div>
-      <button>SEND MESSAGE</button>
-    </form>
     <footer>
       <h1>rawlin08</h1>
       <div class="socials">
