@@ -5,6 +5,7 @@
     --dark-gray: #242424;
     --light-gray: #D9D9D9;
     --white: #FFFFFF;
+    --red: #FF705B;
     --body-padding: 20px;
 }
 html {
@@ -129,6 +130,7 @@ input {
     color: var(--white);
     font-family: inherit;
     outline: none;
+    transition: .2s ease-in-out;
 }
 label {
     position: absolute;
@@ -141,7 +143,7 @@ label {
     transition: .2s ease-in-out;
 }
 input, label {
-    width: 100%;
+    width: calc(100% - 4px);
     height: 55px;
 }
 input:focus + label,
@@ -150,9 +152,31 @@ input:valid + label {
     top: -25px;
     pointer-events: none;
 }
+input:valid {
+    border-bottom: 1px solid var(--mint);
+    transition: .2s ease-in-out;
+}
+input:valid + label {
+    color: var(--mint);
+}
+input:user-invalid {
+    border-bottom: 1px solid var(--red);
+    transition: .2s ease-in-out;
+}
+input:user-invalid + label {
+    color: var(--red);
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+form button {
+   align-self: flex-end;
+   margin: 10px 0 100px 0;
+}
 footer {
     background-color: var(--dark-gray);
-    padding: 40px 20px 60px 20px;
+    padding: 40px 20px;
     border-top: 1px solid var(--white);
 }
 
