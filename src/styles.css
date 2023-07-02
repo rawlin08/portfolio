@@ -2,12 +2,13 @@
 :root {
     --black: #151515;
     --mint: #4EE1A0;
-    --darkGray: #242424;
-    --lightGray: #D9D9D9;
+    --dark-gray: #242424;
+    --light-gray: #D9D9D9;
     --white: #FFFFFF;
+    --body-padding: 20px;
 }
 html {
-    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
 }
 body {
     margin: 0;
@@ -19,7 +20,146 @@ button {
     cursor: pointer;
     background-color: transparent;
     border: none;
+    color: inherit;
+    border-bottom: 2px solid var(--mint);
+    padding: 0 0 10px 0;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 2.2px;
+    font-family: inherit;
+    transition: all .2s ease-in-out;
+}
+button:hover {
+    color: var(--mint);
+    transition: all .2s ease-in-out;
 }
 h1, p {
     margin: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* MOBILE STYLES */
+app-home {
+    display: block;
+}
+main, header, footer {
+    padding: var(--body-padding);
+}
+h1 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.icon {
+    width: 40px;
+    height: 40px;
+}
+#myname {
+    border-bottom: 3px solid var(--mint);
+}
+#greeting {
+    text-align: center;
+    padding: 0 0 60px 0;
+}
+#greeting h2 {
+    margin: 0;
+    font-size: 40px;
+    font-weight: 700;
+}
+#greeting p {
+    margin: 20px 0 24px 0;
+}
+#experiences {
+    display: grid;
+    place-content: center;
+    gap: 24px;
+    padding: 40px 0;
+    border-top: 1px solid var(--white);
+    border-bottom: 1px solid var(--white);
+}
+#experiences h3 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    margin: 0 0 5px 0;
+}
+#experiences p {
+    text-align: center;
+}
+#projects div:first-child {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#projects div:first-child h2 {
+    font-size: 40px;
+    font-weight: 700;
+}
+#bottom {
+    background-color: var(--dark-gray);
+    padding: var(--body-padding);
+}
+#contact {
+    text-align: center;
+}
+#contact h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0 0 20px 0;
+}
+.field {
+    position: relative;
+    margin: 0 0 20px 0;
+}
+input {
+    border: 0;
+    border-bottom: 1px solid var(--light-gray);
+    background-color: transparent;
+    color: var(--white);
+    font-family: inherit;
+    outline: none;
+}
+label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    cursor: text;
+    transition: .2s ease-in-out;
+}
+input, label {
+    width: 100%;
+    height: 55px;
+}
+input:focus + label,
+input:valid + label {
+    font-size: 12px;
+    top: -25px;
+    pointer-events: none;
+}
+footer {
+    background-color: var(--dark-gray);
+    padding: 40px 20px 60px 20px;
+    border-top: 1px solid var(--white);
+}
+
+/* TABLET STYLES */
+@media (min-width: 1024px) {
+}
+
+/* DESKTOP STYLES */
+@media (min-width: 1281px) {
 }
