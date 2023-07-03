@@ -59,15 +59,15 @@ import { Component } from '@angular/core';
       </div>
       <form action="">
         <div class="field">
-          <input id="name" type="text" required>
+          <input id="name" name="name" type="text" required>
           <label for="name">Name</label>
         </div>
         <div class="field">
-          <input id="email" type="email" required>
+          <input id="email" name="email" type="email" required>
           <label for="email">Email</label>
         </div>
         <div class="field">
-          <input id="message" type="text" required>
+          <input id="message" name="message" type="text" required>
           <label for="message">Message</label>
         </div>
         <button>SEND MESSAGE</button>

@@ -32,10 +32,6 @@ button {
     font-family: inherit;
     transition: all .2s ease-in-out;
 }
-button:hover {
-    color: var(--mint);
-    transition: all .2s ease-in-out;
-}
 h1, p {
     margin: 0;
 }
@@ -140,6 +136,13 @@ img {
     position: relative;
     margin: 0 0 20px 0;
 }
+.field input {
+    appearance: none;
+    -webkit-appearance: none;
+    border-radius: 0;
+    padding: 0 15px;
+    font-size: 16px;
+}
 input {
     border: 0;
     border-bottom: 1px solid var(--light-gray);
@@ -164,7 +167,8 @@ input, label {
     height: 40px;
 }
 input:focus + label,
-input:valid + label {
+input:valid + label,
+input:user-invalid + label {
     font-size: 12px;
     top: -25px;
     pointer-events: none;
@@ -322,11 +326,19 @@ footer {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 220px;
+        padding: 0;
     }
     #bottom {
-        padding: 0 165px;
+        padding: 20px 165px 0 165px;
     }
     footer {
         padding: 40px 0;
     }
 }
+@media (hover: hover) {
+    /* when hover is supported */
+    button:hover {
+        color: var(--mint);
+        transition: all .2s ease-in-out;
+    }
+  }
