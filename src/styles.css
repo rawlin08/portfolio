@@ -284,7 +284,6 @@ footer {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 40px 0;
     }
 }
 
@@ -292,9 +291,6 @@ footer {
 @media (min-width: 1281px) {
     header {
         padding: 39px 165px;
-    }
-    .socials {
-        padding: 0 40px 0 0;
     }
     main {
         padding: 0 165px;
@@ -333,7 +329,7 @@ footer {
         padding: 50px 165px 0 165px;
     }
     footer {
-        padding: 40px 0;
+        padding: 40px 165px;
     }
 }
 @media (hover: hover) {
