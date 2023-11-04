@@ -6,8 +6,8 @@ import { Component } from '@angular/core';
   <header>
     <h1>rawlin08</h1>
     <div class="socials">
-      <a href="https://github.com/rawlin08"><svg class="icon"><use href="#github"></use></svg></a>
-      <a href="https://www.linkedin.com/in/alec-rawlins-556874170/"><svg class="icon"><use href="#linkedin"></use></svg></a>
+      <a href="https://github.com/rawlin08"><svg class="icon"><use href="#githubIcon"></use></svg></a>
+      <a href="https://www.linkedin.com/in/alec-rawlins-556874170/"><svg class="icon"><use href="#linkedinIcon"></use></svg></a>
     </div>
   </header>
   <main>
@@ -30,15 +30,15 @@ import { Component } from '@angular/core';
       </div>
       <div>
         <h3>JavaScript</h3>
-        <p>2 Years Experience</p>
+        <p>3 Years Experience</p>
       </div>
       <div>
         <h3>Angular</h3>
-        <p>Less than a Year Experience</p>
+        <p>1 Year Experience</p>
       </div>
       <div>
         <h3>TypeScript</h3>
-        <p>Less than a Year Experience</p>
+        <p>1 Year Experience</p>
       </div>
     </div>
     <div id="projects">
@@ -51,36 +51,13 @@ import { Component } from '@angular/core';
       </div>
     </div>
   </main>
-  <div id="bottom">
-    <div id="form">
-      <div id="contact">
-        <h2>Contact</h2>
-        <p>I would love to hear about your project and how I could help. Please fill in the form, and I'll get back to you as soon as possible.</p>
-      </div>
-      <form action="">
-        <div class="field">
-          <input id="name" name="name" type="text" required>
-          <label for="name">Name</label>
-        </div>
-        <div class="field">
-          <input id="email" name="email" type="email" required>
-          <label for="email">Email</label>
-        </div>
-        <div class="field">
-          <input id="message" name="message" type="text" required>
-          <label for="message">Message</label>
-        </div>
-        <button>SEND MESSAGE</button>
-      </form>
+  <footer>
+    <h1>rawlin08</h1>
+    <div class="socials">
+      <a href="https://github.com/rawlin08"><svg class="icon"><use href="#githubIcon"></use></svg></a>
+      <a href="https://www.linkedin.com/in/alec-rawlins-556874170/"><svg class="icon"><use href="#linkedinIcon"></use></svg></a>
     </div>
-    <footer>
-      <h1>rawlin08</h1>
-      <div class="socials">
-        <a href="https://github.com/rawlin08"><svg class="icon"><use href="#github"></use></svg></a>
-        <a href="https://www.linkedin.com/in/alec-rawlins-556874170/"><svg class="icon"><use href="#linkedin"></use></svg></a>
-      </div>
-    </footer>
-  </div>
+  </footer>
   `,
   styles: [``]
 })
