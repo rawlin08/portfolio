@@ -8,6 +8,7 @@
     --red: #FF705B;
     --body-mobile-padding: 20px;
     --body-tablet-padding: 32px;
+    --card-width: 320px;
 }
 html {
     font-family: 'Space Grotesk', sans-serif;
@@ -72,7 +73,7 @@ h1 {
 #myname {
     border-bottom: 3px solid var(--mint);
 }
-img {
+.meImg {
     width: 175px;
     height: 242px;
     margin: 0 0 40px 0;
@@ -116,6 +117,14 @@ img {
 #projects div:first-child h2 {
     font-size: 40px;
     font-weight: 700;
+}
+#completedProjects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, var(--card-width));
+}
+.projectImg {
+    width: var(--card-width);
+    height: auto;
 }
 #bottom {
     background-color: var(--dark-gray);
@@ -238,7 +247,7 @@ footer {
     #greeting p {
         margin: 60px 460px 34px 0;
     }
-    img {
+    .meImg {
         align-self: center;
         margin: 0;
         width: 310px;
@@ -295,7 +304,7 @@ footer {
     main {
         padding: 0 165px;
     }
-    img {
+    .meImg {
         width: 445px;
         height: 618px;
         right: 165px;
