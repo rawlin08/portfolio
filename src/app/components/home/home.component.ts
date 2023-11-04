@@ -48,9 +48,17 @@ import { Component } from '@angular/core';
       </div>
       <div id="completedProjects">
         <div *ngFor="let project of projects">
-          <img class="projectImg" [src]="project.img" alt="">
+          <a [href]="project.liveurl" target="_blank">
+            <img class="projectImg" [src]="project.img" alt="">
+          </a>
           <div class="projectInfo">
-            <h3>{{ project.title }}</h3>
+            <div>
+              <h3>{{ project.title }}</h3>
+              <div class="links">
+                <a [href]="project.liveurl" target="_blank">Live</a>
+                <a [href]="project.giturl" target="_blank">Github</a>
+              </div>
+            </div>
             <div class="langs">
               <p *ngFor="let lang of project.langs">{{ lang }}</p>
             </div>
@@ -74,17 +82,23 @@ export class HomeComponent {
 
   projects:any = [
     {
-      img: '',
+      img: '/assets/images/weatherScreen.png',
+      liveurl: 'https://rawlin08.github.io/weather-app/',
+      giturl: 'https://github.com/rawlin08/weather-app',
       title: 'WEATHER APP',
       langs: ['HTML', 'CSS', 'TYPESCRIPT', 'API']
     },
     {
-      img: '',
+      img: '/assets/images/todoScreen.png',
+      liveurl: 'https://rawlin08.github.io/todo-app/',
+      giturl: 'https://github.com/rawlin08/todo-app',
       title: 'TODO APP',
       langs: ['HTML', 'CSS', 'TYPESCRIPT']
     },
     {
-      img: '',
+      img: '/assets/images/countriesScreen.png',
+      liveurl: 'https://rawlin08.github.io/countries-display/',
+      giturl: 'https://github.com/rawlin08/countries-display',
       title: 'COUNTRIES APP',
       langs: ['HTML', 'CSS', 'TYPESCRIPT', 'API']
     },
