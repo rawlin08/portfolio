@@ -82,21 +82,21 @@ export class HomeComponent {
 
   projects:any = [
     {
-      img: '/assets/images/weatherScreen.png',
+      img: 'assets/images/weatherScreen.png',
       liveurl: 'https://rawlin08.github.io/weather-app/',
       giturl: 'https://github.com/rawlin08/weather-app',
       title: 'WEATHER APP',
       langs: ['HTML', 'CSS', 'TYPESCRIPT', 'API']
     },
     {
-      img: '/assets/images/todoScreen.png',
+      img: 'assets/images/todoScreen.png',
       liveurl: 'https://rawlin08.github.io/todo-app/',
       giturl: 'https://github.com/rawlin08/todo-app',
       title: 'TODO APP',
       langs: ['HTML', 'CSS', 'TYPESCRIPT']
     },
     {
-      img: '/assets/images/countriesScreen.png',
+      img: 'assets/images/countriesScreen.png',
       liveurl: 'https://rawlin08.github.io/countries-display/',
       giturl: 'https://github.com/rawlin08/countries-display',
       title: 'COUNTRIES APP',
