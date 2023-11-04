@@ -12,7 +12,7 @@ import { Component } from '@angular/core';
   </header>
   <main>
     <div id="aboutme">
-      <img src="" alt="">
+      <img class="meImg" src="" alt="">
       <div id="greeting">
         <h2>Nice to meet you! I'm <span id="myname">Alec Rawlins</span>.</h2>
         <p>I'm a front-end developer passionate about building mobile-first, accessible web apps and sites that users will love.</p>
@@ -47,7 +47,15 @@ import { Component } from '@angular/core';
         <button>CONTACT ME</button>
       </div>
       <div id="completedProjects">
-  
+        <div *ngFor="let project of projects">
+          <img class="projectImg" [src]="project.img" alt="">
+          <div class="projectInfo">
+            <h3>{{ project.title }}</h3>
+            <div class="langs">
+              <p *ngFor="let lang of project.langs">{{ lang }}</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </main>
@@ -63,4 +71,22 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
   constructor() {}
+
+  projects:any = [
+    {
+      img: '',
+      title: 'WEATHER APP',
+      langs: ['HTML', 'CSS', 'TYPESCRIPT', 'API']
+    },
+    {
+      img: '',
+      title: 'TODO APP',
+      langs: ['HTML', 'CSS', 'TYPESCRIPT']
+    },
+    {
+      img: '',
+      title: 'COUNTRIES APP',
+      langs: ['HTML', 'CSS', 'TYPESCRIPT', 'API']
+    },
+  ]
 }
