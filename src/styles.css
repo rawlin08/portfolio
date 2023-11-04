@@ -8,7 +8,7 @@
     --red: #FF705B;
     --body-mobile-padding: 20px;
     --body-tablet-padding: 32px;
-    --card-width: 320px;
+    --card-width: 335px;
 }
 html {
     font-family: 'Space Grotesk', sans-serif;
@@ -33,7 +33,7 @@ button {
     font-family: inherit;
     transition: all .2s ease-in-out;
 }
-h1, p {
+h1, h3, p {
     margin: 0;
 }
 a {
@@ -109,101 +109,40 @@ h1 {
     text-align: center;
     color: var(--light-gray);
 }
-#projects div:first-child {
+#projects > div:first-child {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-#projects div:first-child h2 {
+#projects > div:first-child h2 {
     font-size: 40px;
     font-weight: 700;
 }
 #completedProjects {
     display: grid;
-    grid-template-columns: repeat(auto-fit, var(--card-width));
+    place-content: center;
+    gap: 30px;
 }
-.projectImg {
-    width: var(--card-width);
-    height: auto;
-}
-#bottom {
-    background-color: var(--dark-gray);
-}
-#contact {
-    text-align: center;
-}
-#contact h2 {
-    font-size: 40px;
-    font-weight: 700;
-    margin: 0 0 20px 0;
-}
-#contact p {
-    color: var(--light-gray);
-    margin: 0 0 50px 0;
-}
-.field {
-    position: relative;
-    margin: 0 0 20px 0;
-}
-.field input {
-    appearance: none;
-    -webkit-appearance: none;
-    border-radius: 0;
-    padding: 0 15px;
-    font-size: 16px;
-    width: calc(100% - 30px);
-}
-input {
-    border: 0;
-    border-bottom: 1px solid var(--light-gray);
-    background-color: transparent;
-    color: var(--white);
-    font-family: inherit;
-    outline: none;
-    transition: .2s ease-in-out;
-}
-label {
-    position: absolute;
-    top: 0;
-    left: 15px;
-    font-size: 16px;
+.projectInfo > div:first-child {
     display: flex;
     align-items: center;
-    cursor: text;
-    transition: .2s ease-in-out;
+    justify-content: space-between;
 }
-input, label {
-    width: calc(100% - 4px);
-    height: 40px;
-}
-input:focus + label,
-input:valid + label,
-input:user-invalid + label {
-    font-size: 12px;
-    top: -25px;
-    pointer-events: none;
-}
-input:valid {
-    border-bottom: 1px solid var(--mint);
-    transition: .2s ease-in-out;
-}
-input:valid + label {
-    color: var(--mint);
-}
-input:user-invalid {
-    border-bottom: 1px solid var(--red);
-    transition: .2s ease-in-out;
-}
-input:user-invalid + label {
-    color: var(--red);
-}
-form {
+.langs {
     display: flex;
-    flex-direction: column;
+    gap: 10px;
 }
-form button {
-   align-self: flex-end;
-   margin: 10px 0 100px 0;
+.langs > p {
+    opacity: 0.7;
+}
+.links {
+    display: flex;
+    gap: 10px;
+}
+.projectImg {
+    width: 100%;
+    height: auto;
+    margin: 0 0 10px 0;
 }
 footer {
     background-color: var(--dark-gray);
@@ -263,7 +202,6 @@ footer {
         place-content: flex-start;
         grid-template-columns: 1fr 1fr;
         gap: 50px;
-        border-bottom: none;
     }
     #experiences h3 {
         text-align: left;
@@ -278,17 +216,12 @@ footer {
     #projects div:first-child h2 {
         font-size: 72px;
     }
+    #completedProjects {
+        display: grid;
+        place-content: center;
+        gap: 30px;
+    }
 
-    /* CONTACT */
-    #contact h2 {
-        font-size: 72px;
-    }
-    #contact p {
-        font-size: 18px;
-    }
-    #form {
-        padding: 0 133px;
-    }
     footer {
         display: flex;
         align-items: center;
@@ -325,25 +258,20 @@ footer {
     #experiences {
         grid-template-columns: 1fr 1fr 1fr;
     }
-    #contact {
-        text-align: left;
+    #projects {
+        padding: 0 0 40px 0;
     }
-    #form {
-        display: grid;
+    #completedProjects {
         grid-template-columns: 1fr 1fr;
-        gap: 220px;
-        padding: 0;
     }
-    #bottom {
-        padding: 50px 165px 0 165px;
-    }
+    
     footer {
         padding: 40px 165px;
     }
 }
 @media (hover: hover) {
     /* when hover is supported */
-    button:hover {
+    button:hover, .links > a:hover {
         color: var(--mint);
         transition: all .2s ease-in-out;
     }
