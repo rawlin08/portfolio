@@ -42,7 +42,7 @@ a {
 }
 
 /* COMPONENTS */
-app-home, app-projects {
+app-home, app-projects, app-socials {
     display: block;
 }
 app-aboutme {
@@ -60,7 +60,7 @@ app-experience {
 }
 
 /* GLOBAL MOBILE STYLES */
-main, header, footer, #bottom {
+main, header, footer {
     padding: var(--body-mobile-padding);
 }
 h1 {
@@ -68,17 +68,6 @@ h1 {
     font-size: 24px;
     font-weight: 700;
     margin: 0 0 10px 0;
-}
-.socials {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    z-index: 5;
-}
-.icon {
-    width: 40px;
-    height: 40px;
 }
 footer {
     background-color: var(--dark-gray);
@@ -89,19 +78,15 @@ footer {
 /* GLOBAL TABLET STYLES */
 @media (min-width: 768px) {
     /* BOILER */
-    main, header, footer, #bottom {
+    main, header, footer {
         padding: var(--body-tablet-padding);
     }
 
     /* HEADER */
-    header {
+    app-socials {
         display: flex;
         align-items: center;
         justify-content: space-between;
-    }
-    h1 {
-        margin: 0;
-        font-size: 32px;
     }
 
     /* COMPONENTS */
@@ -116,18 +101,12 @@ footer {
         grid-template-columns: 1fr 1fr;
         gap: 50px;
     }
-
-    footer {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
 }
 
 /* GLOBAL DESKTOP STYLES */
 @media (min-width: 1281px) {
-    header {
-        padding: 39px 165px;
+    header, footer {
+        padding: 40px 165px;
     }
     main {
         padding: 0 165px;
@@ -142,10 +121,6 @@ footer {
     }
     app-projects {
         padding: 0 0 40px 0;
-    }
-    
-    footer {
-        padding: 40px 165px;
     }
 }
 
