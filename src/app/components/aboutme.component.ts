@@ -4,15 +4,15 @@ import { Component } from '@angular/core';
   selector: 'app-aboutme',
   template: `
   <picture class="meImg">
-    <source class="meImg" srcset="/assets/images/image-profile-tablet.jpg" media="(min-width: 768px)" />
-    <source class="meImg" srcset="/assets/images/image-profile-desktop.jpg" media="(min-width: 1281px)" />
-    <img class="meImg" src="/assets/images/image-profile-mobile.jpg" alt="" />
+    <source class="meImg" srcset="assets/images/image-profile-tablet.jpg" media="(min-width: 768px)" />
+    <source class="meImg" srcset="assets/images/image-profile-desktop.jpg" media="(min-width: 1281px)" />
+    <img class="meImg" src="assets/images/image-profile-mobile.jpg" alt="" />
   </picture>
 
   <div id="greeting">
     <h2>Nice to meet you! I'm <span id="myname">Alec Rawlins</span>.</h2>
     <p>I'm a front-end developer passionate about building mobile-first, accessible web apps and sites that users will love.</p>
-    <button>CONTACT ME</button>
+    <a href="https://www.linkedin.com/in/alec-rawlins-556874170/" target="_blank"><button>CONTACT ME</button></a>
   </div>
   `,
   styles: [`

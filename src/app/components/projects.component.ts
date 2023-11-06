@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   template: `
   <div class="heading">
     <h2>Projects</h2>
-    <button>CONTACT ME</button>
+    <a href="https://www.linkedin.com/in/alec-rawlins-556874170/" target="_blank"><button>CONTACT ME</button></a>
   </div>
   <div class="completedProjects">
     <div *ngFor="let project of projects">
