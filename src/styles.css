@@ -41,10 +41,25 @@ a {
     color: inherit;
 }
 
-/* MOBILE STYLES */
-app-home {
+/* COMPONENTS */
+app-home, app-projects {
     display: block;
 }
+app-aboutme {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+app-experience {
+    display: grid;
+    place-content: center;
+    gap: 24px;
+    padding: 40px 0;
+    border-top: 1px solid var(--white);
+    border-bottom: 1px solid var(--white);
+}
+
+/* GLOBAL MOBILE STYLES */
 main, header, footer, #bottom {
     padding: var(--body-mobile-padding);
 }
@@ -65,92 +80,13 @@ h1 {
     width: 40px;
     height: 40px;
 }
-#aboutme {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-#myname {
-    border-bottom: 3px solid var(--mint);
-}
-.meImg {
-    width: 175px;
-    height: auto;
-    margin: 0 0 20px 0;
-}
-#greeting {
-    text-align: center;
-    padding: 0 0 60px 0;
-}
-#greeting h2 {
-    margin: 0;
-    font-size: 40px;
-    font-weight: 700;
-}
-#greeting p {
-    margin: 20px 0 24px 0;
-}
-#experiences {
-    display: grid;
-    place-content: center;
-    gap: 24px;
-    padding: 40px 0;
-    border-top: 1px solid var(--white);
-    border-bottom: 1px solid var(--white);
-}
-#experiences h3 {
-    text-align: center;
-    font-size: 32px;
-    font-weight: 700;
-    letter-spacing: -1px;
-    margin: 0 0 5px 0;
-}
-#experiences p {
-    text-align: center;
-    color: var(--light-gray);
-}
-#projects > div:first-child {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-#projects > div:first-child h2 {
-    font-size: 40px;
-    font-weight: 700;
-}
-#completedProjects {
-    display: grid;
-    place-content: center;
-    gap: 30px;
-}
-.projectInfo > div:first-child {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.langs {
-    display: flex;
-    gap: 10px;
-}
-.langs > p {
-    opacity: 0.7;
-}
-.links {
-    display: flex;
-    gap: 10px;
-}
-.projectImg {
-    width: 100%;
-    height: auto;
-    margin: 0 0 10px 0;
-}
 footer {
     background-color: var(--dark-gray);
     padding: 40px 20px;
     border-top: 1px solid var(--white);
 }
 
-/* TABLET STYLES */
+/* GLOBAL TABLET STYLES */
 @media (min-width: 768px) {
     /* BOILER */
     main, header, footer, #bottom {
@@ -168,58 +104,17 @@ footer {
         font-size: 32px;
     }
 
-    /* GREETING */
-    #aboutme {
+    /* COMPONENTS */
+    app-aboutme {
         display: flex;
         align-items: flex-start;
         padding: 0 0 60px 0;
     }
-    #greeting {
-        text-align: left;
-        padding: 0;
-        
-    }
-    #greeting h2 {
-        font-size: 60px;
-        margin: 0 300px 0 0;
-    }
-    #greeting p {
-        margin: 60px 460px 34px 0;
-    }
-    .meImg {
-        align-self: center;
-        margin: 0;
-        width: 265px;
-        height: auto;
-        position: absolute;
-        top: 0;
-        right: 10px;
-    }
-
-    /* EXPERIENCES */
-    #experiences {
+    app-experience {
         display: grid;
         place-content: flex-start;
         grid-template-columns: 1fr 1fr;
         gap: 50px;
-    }
-    #experiences h3 {
-        text-align: left;
-        font-size: 48px;
-    }
-    #experiences p {
-        text-align: left;
-        font-size: 18px;
-    }
-
-    /* PROJECTS */
-    #projects div:first-child h2 {
-        font-size: 72px;
-    }
-    #completedProjects {
-        display: grid;
-        place-content: center;
-        gap: 30px;
     }
 
     footer {
@@ -229,7 +124,7 @@ footer {
     }
 }
 
-/* DESKTOP STYLES */
+/* GLOBAL DESKTOP STYLES */
 @media (min-width: 1281px) {
     header {
         padding: 39px 165px;
@@ -237,40 +132,25 @@ footer {
     main {
         padding: 0 165px;
     }
-    .meImg {
-        width: 350px;
-        height: auto;
-        right: 70px;
-    }
-    #aboutme {
+
+    /* COMPONENTS */
+    app-aboutme {
         padding: 0 0 200px 0;
     }
-    #greeting {
-        padding: 30px 0 0 0;
-    }
-    #greeting h2 {
-        font-size: 72px;
-        margin: 0 460px 0 0;
-    }
-    #greeting p {
-        margin: 60px 460px 40px 0;
-    }
-    #experiences {
+    app-experience {
         grid-template-columns: 1fr 1fr 1fr;
     }
-    #projects {
+    app-projects {
         padding: 0 0 40px 0;
-    }
-    #completedProjects {
-        grid-template-columns: 1fr 1fr;
     }
     
     footer {
         padding: 40px 165px;
     }
 }
+
+/* GLOBAL HOVER STYLES */
 @media (hover: hover) {
-    /* when hover is supported */
     button:hover, .links > a:hover {
         color: var(--mint);
         transition: all .2s ease-in-out;
