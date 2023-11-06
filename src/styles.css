@@ -151,7 +151,7 @@ footer {
 
 /* GLOBAL HOVER STYLES */
 @media (hover: hover) {
-    button:hover, .links > a:hover {
+    button:hover, .links > a:hover, .icon:hover {
         color: var(--mint);
         transition: all .2s ease-in-out;
     }
