@@ -75,8 +75,8 @@ h1 {
 }
 .meImg {
     width: 175px;
-    height: 242px;
-    margin: 0 0 40px 0;
+    height: auto;
+    margin: 0 0 20px 0;
 }
 #greeting {
     text-align: center;
@@ -189,11 +189,11 @@ footer {
     .meImg {
         align-self: center;
         margin: 0;
-        width: 310px;
-        height: 486px;
+        width: 265px;
+        height: auto;
         position: absolute;
         top: 0;
-        right: 0;
+        right: 10px;
     }
 
     /* EXPERIENCES */
@@ -238,9 +238,9 @@ footer {
         padding: 0 165px;
     }
     .meImg {
-        width: 445px;
-        height: 618px;
-        right: 165px;
+        width: 350px;
+        height: auto;
+        right: 70px;
     }
     #aboutme {
         padding: 0 0 200px 0;
