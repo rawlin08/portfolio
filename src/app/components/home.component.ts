@@ -4,11 +4,7 @@ import { Component } from '@angular/core';
   selector: 'app-home',
   template: `
   <header>
-    <h1>rawlin08</h1>
-    <div class="socials">
-      <a href="https://github.com/rawlin08"><svg class="icon"><use href="#githubIcon"></use></svg></a>
-      <a href="https://www.linkedin.com/in/alec-rawlins-556874170/"><svg class="icon"><use href="#linkedinIcon"></use></svg></a>
-    </div>
+    <app-socials></app-socials>
   </header>
   <main>
     <app-aboutme></app-aboutme>
@@ -16,14 +12,11 @@ import { Component } from '@angular/core';
     <app-projects></app-projects>
   </main>
   <footer>
-    <h1>rawlin08</h1>
-    <div class="socials">
-      <a href="https://github.com/rawlin08"><svg class="icon"><use href="#githubIcon"></use></svg></a>
-      <a href="https://www.linkedin.com/in/alec-rawlins-556874170/"><svg class="icon"><use href="#linkedinIcon"></use></svg></a>
-    </div>
+    <app-socials></app-socials>
   </footer>
   `,
-  styles: [``]
+  styles: [`
+  `]
 })
 export class HomeComponent {
   constructor() {}
