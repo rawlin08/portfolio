@@ -50,6 +50,7 @@ import { Component } from '@angular/core';
         margin: 0 300px 0 0;
     }
     #greeting p {
+        font-size: 18px;
         margin: 60px 460px 34px 0;
     }
     .meImg {
@@ -78,6 +79,7 @@ import { Component } from '@angular/core';
       margin: 0 460px 0 0;
     }
     #greeting p {
+      font-size: 20px;
       margin: 60px 460px 40px 0;
     }
   }
