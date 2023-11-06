@@ -12,7 +12,12 @@ import { Component } from '@angular/core';
   </header>
   <main>
     <div id="aboutme">
-      <img class="meImg" src="" alt="">
+      <picture class="meImg">
+        <source class="meImg" srcset="/assets/images/image-profile-tablet.jpg" media="(min-width: 768px)" />
+        <source class="meImg" srcset="/assets/images/image-profile-desktop.jpg" media="(min-width: 1281px)" />
+        <img class="meImg" src="/assets/images/image-profile-mobile.jpg" alt="" />
+      </picture>
+
       <div id="greeting">
         <h2>Nice to meet you! I'm <span id="myname">Alec Rawlins</span>.</h2>
         <p>I'm a front-end developer passionate about building mobile-first, accessible web apps and sites that users will love.</p>
