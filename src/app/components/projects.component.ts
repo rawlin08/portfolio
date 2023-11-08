@@ -110,5 +110,12 @@ export class ProjectsComponent {
       title: 'COUNTRIES APP',
       langs: ['HTML', 'CSS', 'TYPESCRIPT', 'API']
     },
+    {
+      img: 'assets/images/sunnysideLandingScreen.png',
+      liveurl: 'https://rawlin08.github.io/sunnyside-agency-landing/',
+      giturl: 'https://github.com/rawlin08/sunnyside-agency-landing/',
+      title: 'SUNNYSIDE AGENCY LANDING PAGE',
+      langs: ['HTML', 'CSS', 'TYPESCRIPT']
+    },
   ]
 }
