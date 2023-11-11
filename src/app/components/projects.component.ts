@@ -104,6 +104,13 @@ export class ProjectsComponent {
       langs: ['HTML', 'CSS', 'TYPESCRIPT']
     },
     {
+      img: 'assets/images/planetFactsScreen.png',
+      liveurl: 'https://rawlin08.github.io/planet-facts/',
+      giturl: 'https://github.com/rawlin08/planet-facts',
+      title: 'PLANET FACTS SITE',
+      langs: ['HTML', 'CSS', 'TYPESCRIPT']
+    },
+    {
       img: 'assets/images/countriesScreen.png',
       liveurl: 'https://rawlin08.github.io/countries-display/',
       giturl: 'https://github.com/rawlin08/countries-display',
@@ -116,13 +123,6 @@ export class ProjectsComponent {
       giturl: 'https://github.com/rawlin08/sunnyside-agency-landing/',
       title: 'SUNNYSIDE AGENCY LANDING PAGE',
       langs: ['HTML', 'CSS', 'TYPESCRIPT']
-    },
-    {
-      img: 'assets/images/planetFactsScreen.png',
-      liveurl: 'https://rawlin08.github.io/planet-facts/',
-      giturl: 'https://github.com/rawlin08/planet-facts',
-      title: 'PLANET FACTS SITE',
-      langs: ['HTML', 'CSS', 'TYPESCRIPT']
-    },
+    }
   ]
 }
