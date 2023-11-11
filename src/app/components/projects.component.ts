@@ -117,5 +117,12 @@ export class ProjectsComponent {
       title: 'SUNNYSIDE AGENCY LANDING PAGE',
       langs: ['HTML', 'CSS', 'TYPESCRIPT']
     },
+    {
+      img: 'assets/images/planetFactsScreen.png',
+      liveurl: 'https://rawlin08.github.io/planet-facts/',
+      giturl: 'https://github.com/rawlin08/planet-facts',
+      title: 'PLANET FACTS SITE',
+      langs: ['HTML', 'CSS', 'TYPESCRIPT']
+    },
   ]
 }
