@@ -92,7 +92,7 @@ export class ProjectsComponent {
     {
       img: 'assets/images/taskmanagementscreen.png',
       liveurl: 'https://rawlin08.github.io/task-management-app/',
-      giturl: 'https://github.com/rawlin08/todo-app',
+      giturl: 'https://github.com/rawlin08/task-management-app',
       title: 'TASK MANAGEMENT APP',
       langs: ['HTML', 'CSS', 'TYPESCRIPT']
     },
