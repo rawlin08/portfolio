@@ -97,13 +97,6 @@ export class ProjectsComponent {
       langs: ['HTML', 'CSS', 'TYPESCRIPT']
     },
     {
-      img: 'assets/images/weatherScreen.png',
-      liveurl: 'https://rawlin08.github.io/weather-app/',
-      giturl: 'https://github.com/rawlin08/weather-app',
-      title: 'WEATHER APP',
-      langs: ['HTML', 'CSS', 'TYPESCRIPT', 'API']
-    },
-    {
       img: 'assets/images/planetFactsScreen.png',
       liveurl: 'https://rawlin08.github.io/planet-facts/',
       giturl: 'https://github.com/rawlin08/planet-facts',
